@@ -1,0 +1,154 @@
+﻿<Page
+    x:Class="SMARTcontrol.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SMARTcontrol"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Height="auto">
+            <Grid>
+                <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="-1,-1,0,0" Width="239">
+                    <Grid>
+                        <Button Name="back" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Height="40" Margin="-1" Width="40" Content="&lt;" HorizontalAlignment="Left" FontSize="29.333" Padding="-50,-50,-49,-43" Click="back_click"/>
+                        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="199" Height="40" Margin="39,-1,0,0">
+                            <TextBlock Name="MenuTitle" Margin="0,0,11,2" Text="SMARTcontrol" Foreground="White" SelectionHighlightColor="White" FontSize="21.333" FontFamily="Calibri Light" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Center" Padding="2"/>
+                        </Border>
+                    </Grid>
+                </Border>
+                <ListView x:Name="Menu" Margin="4,43,4,4" Padding="1" SelectionMode="None" ItemClick="Menu_click" IsItemClickEnabled="True"/>
+            </Grid>
+        </Border>
+        <Grid x:Name="Controls" Margin="259,20,20,20" Width="1070" Height="711">
+            <ScrollViewer MaxZoomFactor="3" MinZoomFactor="1" HorizontalScrollMode="Enabled" VerticalScrollBarVisibility="Visible" VerticalScrollMode="Enabled" HorizontalScrollBarVisibility="Visible">
+                <Grid Margin="0,0,0,0" Width="1070" Height="711" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50*"/>
+                        <RowDefinition Height="50*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border x:Name="_1" BorderBrush="White" BorderThickness="1" Grid.Row="0" Grid.Column="0">
+                        <Grid Margin="-1" d:LayoutOverrides="TopPosition, BottomPosition">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="11*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="_1btn0" Content="ON" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_1btn0"/>
+                            <Button x:Name="_1btn1" Content="BLINK" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_1btn1"/>
+                            <Button x:Name="_1btn2" Content="OFF" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_1btn2"/>
+                            <TextBlock x:Name="_1title" Margin="2,4,2,2" TextWrapping="Wrap" Text="ALL LIGHT's" FontSize="32" TextAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border x:Name="_2" BorderBrush="White" BorderThickness="1" Grid.Row="0" Grid.Column="1">
+                        <Grid Margin="-1" d:LayoutOverrides="TopPosition, BottomPosition">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="11*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="_2btn0" Content="ON" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_2btn0"/>
+                            <Button x:Name="_2btn1" Content="BLINK" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_2btn1"/>
+                            <Button x:Name="_2btn2" Content="OFF" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_2btn2"/>
+                            <TextBlock x:Name="_2title" Margin="2,4,1,2" TextWrapping="Wrap" Text="PC LIGHT" FontSize="32" TextAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border x:Name="_3" BorderBrush="White" BorderThickness="1" Grid.Row="0" Grid.Column="2">
+                        <Grid Margin="-1" d:LayoutOverrides="TopPosition, BottomPosition">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="11*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="_3btn0" Content="ON" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_3btn0"/>
+                            <Button x:Name="_3btn1" Content="BLINK" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_3btn1"/>
+                            <Button x:Name="_3btn2" Content="OFF" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_3btn2"/>
+                            <TextBlock x:Name="_3title" Margin="2,4,2,2" TextWrapping="Wrap" Text="CENTER LIGHT" FontSize="32" TextAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border x:Name="_4" BorderBrush="White" BorderThickness="1" Grid.Row="0" Grid.Column="3">
+                        <Grid Margin="-1" d:LayoutOverrides="TopPosition, BottomPosition">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="11*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="_4btn0" Content="ON" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_4btn0"/>
+                            <Button x:Name="_4btn1" Content="BLINK" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_4btn1"/>
+                            <Button x:Name="_4btn2" Content="OFF" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_4btn2"/>
+                            <TextBlock x:Name="_4title" Margin="2,4,1,2" TextWrapping="Wrap" Text="BED LIGHT" FontSize="32" TextAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border x:Name="_5" BorderBrush="White" BorderThickness="1" Grid.Row="1" Grid.Column="0">
+                        <Grid Margin="-1" d:LayoutOverrides="TopPosition, BottomPosition">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="11*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="_5btn0" Content="STRIPE" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_5btn0"/>
+                            <Button x:Name="_5btn1" Content="SOUND ON" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_5btn1"/>
+                            <Button x:Name="_5btn2" Content="SOUND OFF" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_5btn2"/>
+                            <TextBlock x:Name="_5title" Margin="2,4,2,2" TextWrapping="Wrap" Text="OTHER" FontSize="32" TextAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border x:Name="_6" BorderBrush="White" BorderThickness="1" Grid.Row="1" Grid.Column="1">
+                        <Grid Margin="-1" d:LayoutOverrides="TopPosition, BottomPosition">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="11*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="_6btn0" Content="ON" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_6btn0"/>
+                            <Button x:Name="_6btn1" Content="BLINK" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_6btn1"/>
+                            <Button x:Name="_6btn2" Content="OFF" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_6btn2"/>
+                            <TextBlock x:Name="_6title" Margin="2,4,1,2" TextWrapping="Wrap" Text="ALL LIGHT's" FontSize="32" TextAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border x:Name="_7" BorderBrush="White" BorderThickness="1" Grid.Row="1" Grid.Column="2">
+                        <Grid Margin="-1" d:LayoutOverrides="TopPosition, BottomPosition">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="11*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="_7btn0" Content="ON" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_7btn0"/>
+                            <Button x:Name="_7btn1" Content="BLINK" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_7btn1"/>
+                            <Button x:Name="_7btn2" Content="OFF" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_7btn2"/>
+                            <TextBlock x:Name="_7title" Margin="2,4,2,2" TextWrapping="Wrap" Text="ALL LIGHT's" FontSize="32" TextAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border x:Name="_8" BorderBrush="White" BorderThickness="1" Grid.Row="1" Grid.Column="3">
+                        <Grid Margin="-1" d:LayoutOverrides="TopPosition, BottomPosition">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="11*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                                <RowDefinition Height="26*"/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="_8btn0" Content="ON" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_8btn0"/>
+                            <Button x:Name="_8btn1" Content="BLINK" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_8btn1"/>
+                            <Button x:Name="_8btn2" Content="OFF" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" FontSize="40" Tapped="btn_8btn2"/>
+                            <TextBlock x:Name="_8title" Margin="2,4,1,2" TextWrapping="Wrap" Text="ALL LIGHT's" FontSize="32" TextAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

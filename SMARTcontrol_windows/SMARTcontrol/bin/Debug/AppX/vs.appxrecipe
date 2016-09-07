@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LASSE-LAPTOP</Machine>
+    <WindowsUser>lasse</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>3fb92f2d-ec2f-455c-b1ab-45ac2edaf9ad</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>B4FFC509BD7527C0866B0588D751CC4E58798C27C63AA9FEBA30E49896016739</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>3fb92f2d-ec2f-455c-b1ab-45ac2edaf9ad_1.0.0.0_neutral__s99f78nhrq80j</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>3fb92f2d-ec2f-455c-b1ab-45ac2edaf9ad_s99f78nhrq80j!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>3fb92f2d-ec2f-455c-b1ab-45ac2edaf9ad</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=lasse</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T21:32:26.658</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Debug\SMARTcontrol.exe">
+      <PackagePath>SMARTcontrol.exe</PackagePath>
+      <Modified>2015-07-09T21:39:29.899</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-1116x540.scale-180.png">
+      <PackagePath>Assets\Logo-1116x540.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T20:20:49.620</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-150x150.png">
+      <PackagePath>Assets\Logo-150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T20:05:18.102</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-30x30.png">
+      <PackagePath>Assets\Logo-30x30.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T20:08:17.551</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-310x150.scale-100.png">
+      <PackagePath>Assets\Logo-310x150.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T20:21:59.308</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-310x310.png">
+      <PackagePath>Assets\Logo-310x310.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T20:07:30.015</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-512x512.png">
+      <PackagePath>Assets\Logo-512x512.png</PackagePath>
+      <Modified>2015-07-09T18:57:31.691</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-70x70.1.scale-100.png">
+      <PackagePath>Assets\Logo-70x70.1.scale-100.png</PackagePath>
+      <Modified>2015-07-09T20:03:35.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-70x70.2.scale-140.png">
+      <PackagePath>Assets\Logo-70x70.2.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T20:03:35.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-70x70.scale-100.png">
+      <PackagePath>Assets\Logo-70x70.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T20:03:35.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Debug\SMARTcontrol.xr.xml">
+      <PackagePath>SMARTcontrol.xr.xml</PackagePath>
+      <Modified>2015-07-09T21:37:57.096</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-07-09T15:11:01.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-07-09T21:37:57.102</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-07-09T21:32:26.580</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

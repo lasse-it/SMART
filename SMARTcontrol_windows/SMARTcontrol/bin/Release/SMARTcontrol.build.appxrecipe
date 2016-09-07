@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LASSE-LAPTOP</Machine>
+    <WindowsUser>lasse</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>3fb92f2d-ec2f-455c-b1ab-45ac2edaf9ad</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\obj\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Release\SMARTcontrol.exe">
+      <PackagePath>SMARTcontrol.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-1116x540.scale-180.png">
+      <PackagePath>Assets\Logo-1116x540.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-150x150.png">
+      <PackagePath>Assets\Logo-150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-30x30.png">
+      <PackagePath>Assets\Logo-30x30.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-310x150.scale-100.png">
+      <PackagePath>Assets\Logo-310x150.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-310x310.png">
+      <PackagePath>Assets\Logo-310x310.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-512x512.png">
+      <PackagePath>Assets\Logo-512x512.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-70x70.1.scale-100.png">
+      <PackagePath>Assets\Logo-70x70.1.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-70x70.2.scale-140.png">
+      <PackagePath>Assets\Logo-70x70.2.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\Assets\Logo-70x70.scale-100.png">
+      <PackagePath>Assets\Logo-70x70.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Release\SMARTcontrol.xr.xml">
+      <PackagePath>SMARTcontrol.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lasse\Downloads\SMARTcontrol\SMARTcontrol\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

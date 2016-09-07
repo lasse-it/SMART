@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">SMARTcontrol</string>
+
+    <string name="all">All LIGHTs</string>
+    <string name="allonbtn">On</string>
+    <string name="allblinkbtn">Blink</string>
+    <string name="alloffbtn">Off</string>
+
+    <string name="bed">Bed LIGHT</string>
+    <string name="bedonbtn">On</string>
+    <string name="bedblinkbtn">Blink</string>
+    <string name="bedoffbtn">Off</string>
+
+    <string name="center">Center LIGHT</string>
+    <string name="centeronbtn">On</string>
+    <string name="centerblinkbtn">Blink</string>
+    <string name="centeroffbtn">Off</string>
+
+    <string name="pc">PC LIGHT</string>
+    <string name="pconbtn">On</string>
+    <string name="pcblinkbtn">Blink</string>
+    <string name="pcoffbtn">Off</string>
+
+    <string name="effects">Other</string>
+    <string name="effects1">Stripe</string>
+    <string name="effects2">Sound on</string>
+    <string name="effects3">Sound off</string>
+
+    <string name="first1">LIGHT</string>
+    <string name="first2">ALARM</string>
+    <string name="first3">MUSIC</string>
+    <string name="first4">SETTINGS</string>
+    <string name="light">LIGHTcontrol</string>
+    <string name="alarm">ALARMcontrol</string>
+    <string name="music">MUSICcontrol</string>
+    <string name="submitalarm">Submit</string>
+    <string name="lightopt">LIGHT</string>
+    <string name="soundopt">SOUND</string>
+    <string name="playlist">Please select playlist</string>
+    <string name="playlistbtn">Playlist</string>
+    <string name="setalarm">Set an ALARM</string>
+    <string name="deletealarm">Delete an ALARM</string>
+    <string name="alarmview">Please select ALARM</string>
+    <string name="alarmbtn">ALARM</string>
+    <string name="playertitle">Now Playing</string>
+    <string name="loading">Loading…</string>
+    <string name="musictitle">MUSICcontrol</string>
+    <color name="fabpressed">#E75043</color>
+    <color name="fabnormal">#DA4336</color>
+</resources>

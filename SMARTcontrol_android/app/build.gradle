@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 14
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "dk.lasse_it.smartcontrol"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 61
+        versionName "6.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:22.1.1'
+    compile 'com.github.clans:fab:1.5.0'
+    compile project(':volley')
+}

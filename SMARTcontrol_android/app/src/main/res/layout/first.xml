@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#fff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="65dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SMART"
+            android:id="@+id/alltext"
+            android:textSize="50sp"
+            android:background="#fff"
+            android:padding="0dp"
+            android:gravity="top|center_vertical" />
+
+        <ImageButton
+            android:onClick="first4"
+            android:src="@drawable/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:layout_weight=".25"
+            android:background="@android:color/background_light"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/first1"
+        android:id="@+id/first1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25"
+        android:onClick="first1"
+        android:textSize="99sp"
+        android:background="#fff" />
+
+    <Button
+        android:text="@string/first2"
+        android:id="@+id/first2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25"
+        android:onClick="first2"
+        android:textSize="99sp"
+        android:background="#fff" />
+
+    <Button
+        android:text="@string/first3"
+        android:id="@+id/first3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25"
+        android:onClick="first3"
+        android:textSize="99sp"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="top"
+        android:padding="0dp">
+
+    </LinearLayout>
+
+
+</LinearLayout>

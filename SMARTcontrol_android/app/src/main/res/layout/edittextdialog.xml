@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Change server IP for everything"
+        android:id="@+id/textView"
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="10.0.1.106"
+        android:padding="10dp"
+        android:textColor="#aaa"
+        android:textColorHint="#aaa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Change server IP for all things"
+        android:id="@+id/textView2"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="10.0.1.106"
+        android:padding="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Change server IP for all things"
+        android:visibility="gone"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/edittext3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:hint="10.0.1.106"
+        android:padding="10dp" />
+
+    <NumberPicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DialogWhenLarge.NoActionBar">
+    </style>
+    <style name="abtheme" parent="android:Theme.DeviceDefault">
+    </style>
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <style name="Divider_vert">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+</resources>

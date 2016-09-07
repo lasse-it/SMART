@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:id="@+id/mcplayer_player">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:background="@mipmap/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No info"
+        android:id="@+id/songtitle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No info"
+        android:id="@+id/songartist"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/songtitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No info"
+        android:id="@+id/songalbum"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:layout_below="@+id/songartist"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0:00"
+        android:id="@+id/songcurrenttime"
+        android:layout_alignTop="@+id/songlength"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0:00"
+        android:id="@+id/songlength"
+        android:layout_gravity="right"
+        android:layout_below="@+id/songalbum"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@android:color/darker_gray" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:layout_gravity="center_horizontal"
+        android:max="100"
+        android:progress="0"
+        android:indeterminate="false"
+        android:layout_below="@+id/songalbum"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/previous"
+        android:src="@drawable/ic_media_previous"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginRight="10dp" />
+
+        <ImageButton
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/play"
+        android:src="@drawable/ic_media_play"
+            android:background="@android:color/background_light"
+            android:baselineAlignBottom="false" />
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pause"
+            android:visibility="gone"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/next"
+            android:src="@drawable/ic_media_next"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/mute"
+            android:src="@drawable/ic_volume_off"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:scaleType="fitXY" />
+
+        <SeekBar
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/volumebar"
+            android:layout_gravity="center"
+            android:max="100"
+            android:progress="100"
+            android:indeterminate="false" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/unmute"
+            android:src="@drawable/ic_volume"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</RelativeLayout>

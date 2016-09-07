@@ -1,0 +1,52 @@
+<head>
+<style>
+button {
+	height: 18%;
+	width: 33%;
+	color: #fff;
+	background-color: #0537AD;
+	font-size: 50px;
+	border-radius: 10px;
+	border: none;
+}
+
+a {
+	font-size: 40px;
+	text-align: center;
+	color: #fff;
+	background-color: #0537AD;
+	border-radius: 10px;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+	<div>
+		<a href="http://$hostname:6680/mopify">Goto music client</a>
+		<form action="controlv2.php" method="get">
+			<button type="submit" value="high-17-22-27" name="cmd">All on</button>
+			<button type="submit" value="blink-17-22-27" name="cmd">All blink</button>
+			<button type="submit" value="low-17-22-27" name="cmd">All off</button>
+		</form>
+		<form action="controlv2.php" method="get">
+			<button type="submit" value="high-27" name="cmd">Bed on</button>
+			<button type="submit" value="blink-27" name="cmd">Bed blink</button>
+			<button type="submit" value="low-27" name="cmd">Bed off</button>
+		</form>
+		<form action="controlv2.php" method="get">
+			<button type="submit" value="high-17" name="cmd">Center on</button>
+			<button type="submit" value="blink-17" name="cmd">Center blink</button>
+			<button type="submit" value="low-17" name="cmd">Center off</button>
+		</form>
+		<form action="controlv2.php" method="get">
+			<button type="submit" value="high-22" name="cmd">PC on</button>
+			<button type="submit" value="blink-22" name="cmd">PC blink</button>
+			<button type="submit" value="low-22" name="cmd">PC off</button>
+		</form>
+		<form action="controlv2.php" method="get">
+			<button type="submit" value="repeat-high-17_sleep-0.2_high-22_low-17_sleep-0.2_high-27_low-22_sleep-0.2_low-27" name="cmd">Stripe</button>
+			<button type="submit" value="high-23" name="cmd">Sound on</button>
+			<button type="submit" value="low-23" name="cmd">Sound off</button>
+		</form>
+	</div>
+</body>
