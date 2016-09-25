@@ -24,4 +24,5 @@ dependencies {
     compile 'com.android.support:support-v4:22.1.1'
     compile 'com.github.clans:fab:1.5.0'
     compile project(':volley')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
 }

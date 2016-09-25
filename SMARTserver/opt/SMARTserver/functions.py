@@ -54,7 +54,8 @@ def killinstance(cmd):
             for line in lines:
                 linelist = line.split("-")
                 for entry in linelist:
-                    if str(port) == entry:
+                    if port == int(entry):
+                        print("killing PID "+linelist[0])
                         subprocess.call(["kill", linelist[0]])
                         delline = line
         with open('/opt/SMARTserver/instance.list','w') as f:

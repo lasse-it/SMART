@@ -105,6 +105,8 @@ zeroconf = Mopidy HTTP server on $hostname' > /etc/mopidy/mopidy.conf
 chmod 777 /var/log/mopidy /etc/mopidy/mopidy.conf /var/lib/mopidy/.asoundrc
 update-rc.d mopidy defaults
 echo "Spotify Interface at http://"$(hostname -i)":6680/" >> endmessage
+echo "0 0 * * * /usr/sbin/service mopidy restart
+@reboot /usr/sbin/service mopidy restart" > /etc/cron.d/mopidy
 elif [ "$answer" = "no" ]; then
 echo 1 > /dev/null
 else

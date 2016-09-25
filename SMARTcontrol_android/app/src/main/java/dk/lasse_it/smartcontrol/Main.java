@@ -154,7 +154,7 @@ public class Main extends Activity {
         startActivity(b);
     }
     public void first3(View view) {
-        Intent c = new Intent(getBaseContext(), Musicplayer.class);
+        Intent c = new Intent(getBaseContext(), Musicplayer_web.class);
         startActivity(c);
     }
     public void first4(View view) {

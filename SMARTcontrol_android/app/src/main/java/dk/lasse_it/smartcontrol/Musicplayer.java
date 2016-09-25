@@ -156,9 +156,7 @@ public class Musicplayer extends Activity {
                 if (i[0] == 5) {
                     i[0] = 0;
                 }
-                    if ( findViewById(this.android.R.id.content) == R.id.mcplayer_player ){
-                        // do stuff
-                    }
+
                     Volley_request("GetPlayStateUI", "Volley_error", "music_state");
                     Volley_request("GetVolumeUI", "Volley_error", "music_volume_get");
                     Volley_request("GetCurrentTrackUI", "Volley_error", "music_song");
