@@ -11,7 +11,7 @@ dpkg-reconfigure tzdata
 echo 'Please enter a new password for the user "root":'
 passwd root
 
-echo -n "Please specify a new hostname:"
+echo -n "Please specify a new hostname: "
 read hostname
 echo $hostname > /etc/hostname
 easy_install pip
