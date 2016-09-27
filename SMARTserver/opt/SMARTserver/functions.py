@@ -107,6 +107,53 @@ def runcmd(cmd, kill=1):
         runcmd("repeat-high-"+ports+"_sleep-0.1_low-"+ports+"_sleep-0.1")
     return cmdsend
 
+def check_login(username, password):
+    valid = False
+    with open('/opt/SMARTserver/login.list', 'r') as f:
+        f.seek(0)
+        fc = f.read(1)
+        if not fc:
+            valid = True
+            print("Authentication is disabled, because no logins have been added")
+        else:
+            f.seek(0)
+            for line in f:
+                l = line.split('<->')
+                if username == l[0]:
+                    if password == l[1]:
+                        valid = True
+        f.close()
+    if valid == True:
+        print("login successful for user: "+username)
+    else:
+        print("login failed for user: "+username)
+    return valid
+
+def add_login(username, password):
+    del_login(username,1)
+    f = open('/opt/SMARTserver/login.list','a')
+    f.write(username+"<->"+password)
+    print("Added user: "+username)
+    f.close()
+    
+def del_login(username,silent=0):
+    delline = ""
+    lines = []
+    with open('/opt/SMARTserver/login.list', 'r') as f:
+        for line in f:
+            lineuser = line.split("<->")[0]
+            if lineuser != username:
+                    lines.append(line)
+            else:
+                if silent == 0:
+                    print("Deleted user: "+lineuser)
+        f.close()
+    with open('/opt/SMARTserver/login.list','w') as f:
+            for line in lines:
+                if line != delline:
+                    f.write(line)
+            f.close
+
 def music_request(json):
     jsonb = json.encode('utf8')
     return urllib.request.urlopen(urllib.request.Request('http://localhost:6680/mopidy/rpc', data=jsonb, headers={'Content-Type': 'application/json'})).read()
