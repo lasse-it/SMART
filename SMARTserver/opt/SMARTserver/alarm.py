@@ -21,7 +21,7 @@ spotify = ""
 if len(sys.argv) == 4:
     spotify = sys.argv[3]
 
-if year == str(time.year):
+if year == str(time.year) or year == '*':
     runcmd(cmd)
     if spotify != "":
         music_consume()

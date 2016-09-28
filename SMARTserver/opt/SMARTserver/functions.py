@@ -135,9 +135,9 @@ def add_login(username, password):
     f.write(username+"<->"+password)
     print("Added user: "+username)
     f.close()
+    return "success"
     
 def del_login(username,silent=0):
-    delline = ""
     lines = []
     with open('/opt/SMARTserver/login.list', 'r') as f:
         for line in f:
@@ -150,9 +150,9 @@ def del_login(username,silent=0):
         f.close()
     with open('/opt/SMARTserver/login.list','w') as f:
             for line in lines:
-                if line != delline:
-                    f.write(line)
+                f.write(line)
             f.close
+    return "success"
 
 def music_request(json):
     jsonb = json.encode('utf8')
@@ -214,7 +214,7 @@ def music_playlist_get(playlist):
     json = '{"method": "core.playlists.get_items", "jsonrpc": "2.0", "params": {"uri": "'+playlist+'"}, "id": 1}'
     return music_request(json)
 
-def music_consume(): #retest
+def music_consume():
     json = '{"method": "core.tracklist.set_consume", "jsonrpc": "2.0", "params": {"value": true}, "id": 1}'
     return music_request(json)
 
@@ -230,8 +230,8 @@ def music_queue_get():
     json = '{"method": "core.tracklist.get_tracks", "jsonrpc": "2.0", "id": 1}'
     return music_request(json)
 
-def alarm_add(year,month,day,hour,minute,cmd,spotify):
-    new_alarm = minute+' '+hour+' '+day+' '+month+' * root /opt/SMARTserver/alarm.py '+year+' '+cmd+' "'+spotify+'"'
+def alarm_add(year,month,day,hour,minute,cmd,spotify,dayofweek='*'):
+    new_alarm = minute+' '+hour+' '+day+' '+month+' '+dayofweek+' root /opt/SMARTserver/alarm.py '+year+' '+cmd+' "'+spotify+'"'
     f = open('/etc/cron.d/smart','a')
     f.write(new_alarm + '\n')
 
@@ -250,25 +250,51 @@ def alarm_list_json():
         hour = alarmlist[1]
         day = alarmlist[2]
         month = alarmlist[3]
+        dayofweek = alarmlist[4]
         year = alarmlist[7]
         cmd = alarmlist[8]
         spotify = ""
         if len(alarmlist) > 9:
             spotify = alarmlist[9]
-        alarm_json = '{"spotify":'+spotify+', "cmd":"'+cmd+'",  "year":"'+year+'", "month":"'+month+'", "day":"'+day+'", "hour":"'+hour+'", "minute":"'+minute+'"}'
+        alarm_json = '{"spotify":'+spotify+', "cmd":"'+cmd+'",  "year":"'+year+'", "month":"'+month+'", "day":"'+day+'", "hour":"'+hour+'", "minute":"'+minute+'", "dayofweek":"'+dayofweek+'"}'
         alarms_list.append(alarm_json)
     return "{\"alarms\": ["+", ".join(alarms_list)+"]}"
         
-def alarm_del(year,month,day,hour,minute):
-    del_alarm = minute+' '+hour+' '+day+' '+month+' * root /opt/SMARTserver/alarm.py '+year
+def alarm_del(year,month,day,hour,minute,dayofweek='*'):
+    del_alarm = minute+' '+hour+' '+day+' '+month+' '+dayofweek+' root /opt/SMARTserver/alarm.py '+year
     alarms = alarm_list()
     f = open('/etc/cron.d/smart', 'w')
     for line in alarms:
         if not line.startswith(del_alarm):
             f.write(line)
-            
-            
-            
+
+def list_ports():
+    with open('/opt/SMARTserver/ports.list', 'r') as f:
+        ports = f.read()
+        f.close()
+    return ports
+
+def add_port(gpio, name, type, location):
+    del_port(gpio,1)
+    f = open('/opt/SMARTserver/ports.list','a')
+    f.write(gpio+"<->"+name+"<->"+type+"<->"+location)
+    print("Added port "+gpio+" with name "+name+" as type "+type+" at location "+location)
+    f.close()
+    return "success"
     
-    
-    
+def del_port(gpio,silent=0):
+    lines = []
+    with open('/opt/SMARTserver/ports.list', 'r') as f:
+        for line in f:
+            linegpio = line.split("<->")[0]
+            if linegpio != gpio:
+                    lines.append(line)
+            else:
+                if silent == 0:
+                    print("Deleted port: "+linegpio)
+        f.close()
+    with open('/opt/SMARTserver/ports.list','w') as f:
+            for line in lines:
+                f.write(line)
+            f.close
+    return "success"
